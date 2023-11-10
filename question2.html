@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q2</title>
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="Enter a number">
+    <button onclick="checkInput()">Check</button>
+
+    <script>
+        function checkInput() {
+            // Get the value entered by the user
+            var userInput = document.getElementById('userInput').value;
+
+            // Check if the input is a number
+            if (!isNaN(userInput) && userInput !== '') {
+                var number = parseFloat(userInput);
+                if (number < 10) {
+                    alert("The number is lower than 10");
+                } else {
+                    alert("The number is higher than 10");
+                }
+            } else {
+                alert("Please insert a number!");
+            }
+        }
+    </script>
+</body>
+</html>

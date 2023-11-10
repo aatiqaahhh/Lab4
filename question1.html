@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q1</title>
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="myElement">
+        <p>Welcome to my website!</p>
+    </div>
+
+    <script>
+        document.body.style.fontFamily="Times New Roman";
+        document.body.style.fontSize="35px";
+        document.body.style.fontStyle="italic";
+        document.getElementById('myElement').getElementsByTagName('p')[0].innerHTML = "Hello there!";
+    </script>
+</body>
+</html>
